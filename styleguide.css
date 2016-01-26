@@ -1,0 +1,38 @@
+@import url(https://fonts.googleapis.com/css?family=Cookie);
+* {
+  padding: inherit;
+  margin-left: 5px;
+}
+
+h1 {
+  font-family: helvetica;
+  font-weight: bold;
+  color: grey;
+  font-size: 45px;
+}
+
+h2 {
+  font-family: Cookie;
+  color: #3bbc46;
+  font-size: 30px;
+}
+
+p {
+  font-family: arial;
+  line-height: 0;
+
+
+
+}
+
+p2 {
+  font-family: monospace;
+  font-size: 20px;
+}
+
+section {
+  font-family: helvetica;
+  font-weight: bold;
+  color: grey;
+  font-size: 30px;
+}
