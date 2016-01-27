@@ -2,7 +2,6 @@
 * {
   padding: inherit;
   margin-left: 5px;
-  background-color: #ffdbcc;
 }
 
 h1 {
@@ -12,18 +11,25 @@ h1 {
   font-size: 45px;
 }
 
-section {
+h2 {
   font-family: Cookie;
   color: #3bbc46;
   font-size: 30px;
 }
 
-ul {
-  font-family: monospace;
-  font-size: 20px;
-  color: black;
+p {
+  font-family: arial;
+  line-height: 0;
 }
 
-body {
-  font-family: arial;
+p2 {
+  font-family: monospace;
+  font-size: 20px;
+}
+
+section {
+  font-family: helvetica;
+  font-weight: bold;
+  color: grey;
+  font-size: 30px;
 }
