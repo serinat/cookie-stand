@@ -61,11 +61,3 @@ Store.prototype.render = function() {
       stores[i].render ();
     }
   };
-// pikePlace.randomNumber = function(minCustomer, maxCustomer) {
-//   return Math.randomNumber() * (maxCustomer - minCustomer) + minCustomer;
-// };
-//
-// pikePlace.randomCustomer = function(17, 188) {
-//   return Math.random() * (188 - 17) + 17;
-//
-// pikePlace.cookieArr.push(pikePlace.randomcustomer(pikePlace.minCustomer, pikePlace.maxCustomer));
