@@ -7,7 +7,27 @@
   </head>
   <body>
     <h1>Pat's Salmon Cookies Shop<h1>
-    <section id="stores"></section>
+    <h2>Daily Sales Projection</h2>
+    <table id = 'myTable'>
+      <tr id="a">
+        <th>Store Name</th>
+        <th colspan="8">Hourly Cookie Sales</th>
+        <th>Total Hourly Cookie Sales</th>
+      </tr>
+    </table>
+    <section id="stores">
+      <form id ='userInfo'>
+        <label for='storeName'>Store Name</label>
+        <input type='text' id='storeName'>
+        <label for='storeMin'>Min</label>
+        <input type='text' id='storeMin'>
+        <label for='storeMax'>Max</label>
+        <input type='text' id='storeMax'>
+        <label for='storeAvg'>Avg</label>
+        <input type='text' id='storeAvg'>
+        <button type='submit' id='submit'>Submit</button>
+      </form>
+    </section>
     <script src="app.js"></script>
     </body>
 </html>

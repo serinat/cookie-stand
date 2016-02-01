@@ -1,7 +1,5 @@
 @import url(https://fonts.googleapis.com/css?family=Cookie);
 * {
-  padding: inherit;
-  margin-left: 5px;
   background-color: #ffdbcc;
 }
 
@@ -10,7 +8,7 @@ h1 {
   font-weight: bold;
   color: grey;
   font-size: 45px;
-  /*text-align: center;*/
+  text-align: center;
 }
 
 h2 {
@@ -20,18 +18,18 @@ h2 {
   text-align: center;
 }
 
-section {
+#a {
   font-family: Cookie;
   color: #3bbc46;
   font-size: 30px;
 }
 
-li {
+td, tr {
   font-family: monospace;
   font-size: 20px;
   color: black;
-  padding: 8px;
-  /*text-align: center;*/
+  padding: 10px;
+  text-align: center;
 }
 
 body {
