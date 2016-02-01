@@ -1,26 +1,36 @@
-var hoursOpen = ["10am", "11am", "12pm", "1pm", "2pm", "3pm", "4pm", "5pm"];
-var names = ["Pike Place", "SeaTac Airport", "Southcenter", "Bellevue Square", "Alki"];
-// var stores = [];
-// var minCusts = [17, 6, 11, 20, 3];
-// var maxCusts = [88, 24, 38, 48, 24];
-// var avgCookies = [5.2, 1.2, 1.9, 3.3, 2.6];
+  var hoursOpen = ["10am", "11am", "12pm", "1pm", "2pm", "3pm", "4pm", "5pm"];
+  var pikePlace = new Store ("Pike Place", 8, 17, 88, 5.2);
+  var seaTac = new Store ("SeaTac Airport", 8, 6, 24, 1.2);
+  var southcenter = new Store ("Southcenter", 8, 11, 38, 1.9);
+  var bellevueSquare = new Store ("Bellevue Square", 8, 20, 48, 3.3);
+  var alki = new Store ("Alki", 8, 3, 24, 2.6);
+  var siteNameEl = document.getElementById("stores");
 
-
-var btnEl = document.getElementById("submit");
-var nameInput = document.getElementById("storeName");
-var minInput = document.getElementById("minInput");
-var maxIutput= document.getElementById("maxInput");
-var avgInput = document.getElementById("avgInput");
+  var btnEl = document.getElementById("submit");
+  var nameInput = document.getElementById("storeName");
+  var minCustInput = document.getElementById("storeMin");
+  var maxCustInput= document.getElementById("storeMax");
+  var avgCustInput = document.getElementById("storeAvg");
 
 btnEl.addEventListener("click", function(event) {
   event.preventDefault();
-  var newStore = event.target.storeLocal.value;
-  var getMin = event.target.minInput.value;
-  var getMax = event.target.maxInput.value;
-  var getAvg = event.target.avgInput.value;
-  var userStore = new Store(newStore, getMin, getMax, getAvg);
+  var getName = nameInput.value;
+  var getMinCust = parseInt(minCustInput.value);
+  var getMaxCust = parseInt(maxCustInput.value);
+  var getAvgCust = parseInt(avgCustInput.value);
+  // var getRow = nameInput.value + "Row";
+  var userStore = new Store(getName, getMinCust, getMaxCust, getAvgCust);
   userStore.render();
 });
+//   clearFields(event);
+// });
+//
+//   var clearFields = function () {
+//     event.target.storeLocal.value = null;
+//     event.target.minInput.value = null;
+//     event.target.maxInput.value = null;
+//     event.target.avgInput.value = null;
+//   }
 
 function Store(name, hoursOpen, minCust, maxCust, avgCookie) {
   this.name = name;
@@ -44,12 +54,6 @@ Store.prototype.getHourlySales = function () {
   }
 };
 
-var pikePlace = new Store ('Pike Place', 8, 17, 88, 5.2);
-var seaTac = new Store ('SeaTac Airport', 8, 6, 24, 1.2);
-var southcenter = new Store ('Southcenter', 8, 11, 38, 1.9);
-var bellevueSquare = new Store ('Bellevue Square', 8, 20, 48, 3.3);
-var alki = new Store ('Alki', 8, 3, 24, 2.6);
-
 Store.prototype.render = function() {
     this.getHourlySales();
     var tableEl = document.getElementById("myTable");
@@ -71,6 +75,18 @@ Store.prototype.render = function() {
     // newStore.appendChild(ulEl);
   }
 
+  headerGen = function () {
+  var tHeader = document.createElement("tr");
+  tHeader.innerHTML = "stores";
+    for (i = 0; i < hoursOpen.length; i++) {
+    var tHours = document.createElement("td");
+    tHours.innerHTML = hoursOpen[i];
+    tHeader.appendChild(tHours)
+    siteNameEl.appendChild(tHeader);
+  };
+};
+
+  headerGen();
   pikePlace.render();
   seaTac.render();
   southcenter.render();
