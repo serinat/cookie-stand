@@ -15,9 +15,9 @@
 btnEl.addEventListener("click", function(event) {
   event.preventDefault();
   var getName = nameInput.value;
-  var getMinCust = parseInt(minCustInput.value);
-  var getMaxCust = parseInt(maxCustInput.value);
-  var getAvgCust = parseInt(avgCustInput.value);
+  var getMinCust = minCustInput.value;
+  var getMaxCust = maxCustInput.value;
+  var getAvgCust = avgCustInput.value;
   // var getRow = nameInput.value + "Row";
   var userStore = new Store(getName, getMinCust, getMaxCust, getAvgCust);
   userStore.render();

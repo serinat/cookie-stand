@@ -7,6 +7,11 @@ body {
   background-attachment: fixed;
 }
 
+p {
+  font-family: arial;
+  text-align: center;
+}
+
 h1 {
   font-family: helvetica;
   font-weight: bold;
@@ -31,11 +36,22 @@ li {
   display: inline;
 }
 
-a {
+li a {
   padding: 8px;
   color: white;
   background-color: #dddddd;
   text-decoration: none;
+}
+
+#b, #d, #e {
+  color: grey;
+}
+
+figure {
+  float: left;
+  text-align: center;
+  border: 3px solid #dddddd;
+  background-color: white;
 }
 
 h2 {
