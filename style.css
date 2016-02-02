@@ -1,6 +1,10 @@
 @import url(https://fonts.googleapis.com/css?family=Cookie);
-* {
-  background-color: #ffdbcc;
+body {
+  font-family: arial;
+  background-image: url("smoked-salmon-macaron-1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
 }
 
 h1 {
@@ -9,6 +13,29 @@ h1 {
   color: grey;
   font-size: 45px;
   text-align: center;
+  margin-top: 2em;
+  border: 3px white;
+  border-style: dotted solid dotted solid;
+}
+
+ul {
+  list-style-type: none;
+  font-size: 20px;
+  margin: 0;
+  padding: 0;
+  position: fixed;
+  top: 0;
+}
+
+li {
+  display: inline;
+}
+
+a {
+  padding: 8px;
+  color: white;
+  background-color: #dddddd;
+  text-decoration: none;
 }
 
 h2 {
@@ -18,10 +45,14 @@ h2 {
   text-align: center;
 }
 
+#slogan {
+  font-style: italic;
+}
+
 #a {
   font-family: Cookie;
   color: #3bbc46;
-  font-size: 30px;
+  font-size: 35px;
 }
 
 td, tr {
@@ -30,8 +61,4 @@ td, tr {
   color: black;
   padding: 10px;
   text-align: center;
-}
-
-body {
-  font-family: arial;
 }
