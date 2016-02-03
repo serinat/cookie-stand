@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <title>Pat's Salmon Cookies Stand</title>
+  </head>
+  <body>
+    <h1>Pat's Salmon Cookies Shop<h1>
+    <h2>Sales Generator</h2>
+    <section>
+      <form id ='userInfo'>
+        <label for='storeName'>Store Name:</label>
+        <input type='text' id='storeName'>
+        <label for='storeMin'>Min Customers:</label>
+        <input type='text' id='storeMin'>
+        <label for='storeMax'>Max Customers:</label>
+        <input type='text' id='storeMax'>
+        <label for='storeAvg'>Avg Sales:</label>
+        <input type='text' id='storeAvg'>
+        <button type='submit' id='submit'>Submit</button>
+      </form>
+    </section>
+    <h2>Daily Sales Projection</h2>
+    <table id = "myTable">
+      <tr id="a">
+        <th>Store Name</th>
+        <th colspan="8">Hourly Cookie Sales</th>
+        <th>Total Hourly Cookie Sales</th>
+      </tr>
+      <tr id="r">
+        <th id="h">10AM</th>
+        <th>10AM</th>
+        <th>11AM</th>
+        <th>12PM</th>
+        <th>1PM</th>
+        <th>2PM</th>
+        <th>3PM</th>
+        <th>4PM</th>
+        <th>5PM</th>
+      </tr>
+    </table>
+    <script src="app.js"></script>
+    </body>
+</html>

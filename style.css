@@ -1,8 +1,15 @@
 @import url(https://fonts.googleapis.com/css?family=Cookie);
-* {
-  padding: inherit;
-  margin-left: 5px;
-  background-color: #ffdbcc;
+body {
+  font-family: arial;
+  background-image: url("smoked-salmon-macaron-1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+p {
+  font-family: arial;
+  text-align: center;
 }
 
 h1 {
@@ -10,7 +17,41 @@ h1 {
   font-weight: bold;
   color: grey;
   font-size: 45px;
-  /*text-align: center;*/
+  text-align: center;
+  margin-top: 2em;
+  border: 3px white;
+  border-style: dotted solid dotted solid;
+}
+
+ul {
+  list-style-type: none;
+  font-size: 20px;
+  margin: 0;
+  padding: 0;
+  position: fixed;
+  top: 0;
+}
+
+li {
+  display: inline;
+}
+
+li a {
+  padding: 8px;
+  color: white;
+  background-color: #dddddd;
+  text-decoration: none;
+}
+
+#b, #d, #e {
+  color: grey;
+}
+
+figure {
+  float: left;
+  text-align: center;
+  border: 3px solid #dddddd;
+  background-color: white;
 }
 
 h2 {
@@ -20,20 +61,37 @@ h2 {
   text-align: center;
 }
 
-section {
-  font-family: Cookie;
-  color: #3bbc46;
-  font-size: 30px;
+#slogan {
+  font-style: italic;
 }
 
-li {
+#a {
+  font-family: Cookie;
+  color: #3bbc46;
+  font-size: 35px;
+}
+
+#r {
+  text-align: center;
+}
+
+#h {
+  visibility: hidden;
+}
+
+td, tr {
   font-family: monospace;
   font-size: 20px;
   color: black;
-  padding: 8px;
-  /*text-align: center;*/
+  padding: 12px;
+  text-align: left;
 }
 
-body {
-  font-family: arial;
+#footer {
+  padding: 0.8em;
+}
+
+.fadeIn {
+  -webkit-animation-name: fadeIn;
+  animation-name: fadeIn;
 }
