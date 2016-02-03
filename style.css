@@ -7,6 +7,10 @@ body {
   background-attachment: fixed;
 }
 
+#logo {
+  margin-top: 5em;
+}
+
 p {
   font-family: arial;
   text-align: center;
@@ -94,4 +98,9 @@ td, tr {
 .fadeIn {
   -webkit-animation-name: fadeIn;
   animation-name: fadeIn;
+}
+
+.slideOutRight {
+  -webkit-animation-name: slideOutRight;
+  animation-name: slideOutRight;
 }
